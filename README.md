@@ -1,2 +1,2 @@
 # K-ngarnir
-Engin útskýring. Bara kóngarnirþ
+Engin útskýring. Bara kóngarnir
