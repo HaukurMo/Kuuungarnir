@@ -1,2 +1,2 @@
-# K-ngarnir
+# Kongarnir
 Engin útskýring. Bara kóngarnir
