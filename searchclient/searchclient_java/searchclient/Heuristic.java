@@ -12,6 +12,7 @@ public abstract class Heuristic
 
     public int h(State s)
     {
+        System.err.println(State.goals);    
         return 0;
     }
 
