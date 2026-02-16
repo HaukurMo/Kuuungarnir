@@ -45,7 +45,7 @@ public class GraphSearch {
             while (true) {
 
                 //Print a status message every 10000 iteration
-                if (++iterations % 10000 == 0) {
+                if (++iterations % 100 == 0) {
                     printSearchStatus(expanded, frontier);
                 }
                 // System.err.println(iterations);

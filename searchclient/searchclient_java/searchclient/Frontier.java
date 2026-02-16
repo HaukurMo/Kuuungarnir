@@ -110,10 +110,11 @@ class FrontierBestFirst
         implements Frontier
 {
     private Heuristic heuristic;
-    private final PriorityQueue<State> pQueue = new PriorityQueue<State>(65536, this.heuristic);
+    private final PriorityQueue<State> pQueue;
 
     public FrontierBestFirst(Heuristic h)
     {
+        this.pQueue = new PriorityQueue<State>(65536, h);
         this.heuristic = h;
     }
 

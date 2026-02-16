@@ -3,7 +3,7 @@
 set -euo pipefail
 
 IN_LOG="${1:-run.log}"
-OUT_CSV="${2:-benchmarks_extracted.csv}"
+OUT_CSV="${2:-benchmarks_extracted_astar_greedy.csv}"
 TIMEOUT_SEC="${TIMEOUT_SEC:-180}"
 
 awk -v timeout="$TIMEOUT_SEC" '
@@ -43,8 +43,8 @@ function emit() {
 }
 
 # Strategy line
-/^Starting breadth-first search\./ { strat="BFS"; next }
-/^Starting depth-first search\./   { strat="DFS"; next }
+/^Starting best-first search using A\* evaluation\./ { strat="astar"; next }
+/^Starting best-first search using greedy evaluation\./   { strat="greedy"; next }
 
 # Timeout marker
 /\[client\]\[info\] Client timed out\./ { timed_out=1; next }
