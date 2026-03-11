@@ -1,0 +1,19 @@
+Level,Strategy,States Generated,Time/s,Solution length
+MAPF00,astar,37,0.032,14
+MAPF01,astar,742,0.052,14
+MAPF02,astar,11035,0.119,14
+MAPF02C,astar,25510,0.242,14
+MAPF03,astar,135894,1.117,14
+MAPF03C,astar,160836,0.852,14
+MAPF00,greedy,29,0.030,14
+MAPF01,greedy,187,0.033,14
+MAPF02,greedy,988,0.040,14
+MAPF02C,greedy,1019,0.043,14
+MAPF03,greedy,3561,0.055,14
+MAPF03C,greedy,5451,0.061,16
+MAPFslidingpuzzle,astar,72046,0.454,28
+MAPFslidingpuzzle,greedy,917,0.066,48
+MAPFreorder2,astar,2757611,215.177,38
+MAPFreorder2,greedy,14714,0.247,106
+BFSfriendly,astar,3071,0.056,1
+BFSfriendly,greedy,3071,0.055,1

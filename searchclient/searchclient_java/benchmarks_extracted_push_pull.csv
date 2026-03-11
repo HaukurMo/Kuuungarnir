@@ -1,0 +1,3 @@
+Level,Strategy,States Generated,Time/s,Solution length
+SAFirefly,greedy,1568242,25.117,412
+SACrunch,greedy,67905,1.175,945
